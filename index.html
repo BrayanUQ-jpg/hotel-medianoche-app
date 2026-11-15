@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hotel Medianoche — Descargar app</title>
+<meta name="description" content="App Android de reservas de hotel: habitaciones, tours, taxi y pagos. Descarga el APK gratis.">
+<link rel="icon" href="img/icono.png">
+<style>
+  :root{
+    --bg:#0f1115; --card:#1a1d23; --line:#2a2e37;
+    --text:#f2f3f5; --muted:#9aa0ab; --gold:#d8b56a; --blue:#2979ff;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.55}
+  .wrap{max-width:960px;margin:0 auto;padding:0 20px}
+
+  header{padding:56px 0 40px;text-align:center;
+    background:radial-gradient(900px 340px at 50% 0,#2a2340 0,transparent 70%)}
+  .logo{width:112px;height:112px;border-radius:26px;box-shadow:0 10px 30px rgba(0,0,0,.5);border:1px solid var(--line)}
+  h1{font-size:clamp(28px,5vw,40px);margin-top:20px;letter-spacing:-.5px}
+  .sub{color:var(--muted);margin-top:6px;font-size:17px}
+  .badges{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:16px}
+  .badge{font-size:13px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:4px 12px}
+
+  .btn{display:inline-flex;align-items:center;gap:10px;margin-top:28px;background:var(--blue);color:#fff;
+    text-decoration:none;font-weight:700;font-size:18px;padding:15px 34px;border-radius:14px;
+    box-shadow:0 8px 24px rgba(41,121,255,.35);transition:transform .15s,box-shadow .15s}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(41,121,255,.45)}
+  .btn:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+  .small{color:var(--muted);font-size:13px;margin-top:12px}
+
+  section{padding:36px 0}
+  h2{font-size:24px;margin-bottom:18px}
+
+  .shots{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .shot{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:10px}
+  .shot img{width:100%;height:auto;display:block;border-radius:14px}
+  .shot p{text-align:center;color:var(--muted);font-size:14px;padding:10px 0 4px}
+
+  .feats{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+  .feat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+  .feat b{display:block;margin-bottom:4px;color:var(--gold)}
+  .feat span{color:var(--muted);font-size:14px}
+
+  ol.steps{counter-reset:s;list-style:none;display:grid;gap:12px}
+  ol.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px 14px 56px;position:relative}
+  ol.steps li::before{content:counter(s);position:absolute;left:16px;top:50%;transform:translateY(-50%);
+    width:28px;height:28px;border-radius:50%;background:var(--gold);color:#1a1a1a;font-weight:700;display:grid;place-items:center;font-size:14px}
+
+  .note{background:#1d1a12;border:1px solid #4a3f22;border-radius:14px;padding:16px;color:#e6d9b3;font-size:14px}
+  footer{text-align:center;color:var(--muted);font-size:13px;padding:34px 0 50px;border-top:1px solid var(--line);margin-top:20px}
+  footer a{color:var(--gold)}
+
+  @media (max-width:640px){
+    .shots{grid-template-columns:1fr;max-width:300px;margin:0 auto}
+    header{padding-top:40px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <img class="logo" src="img/icono.png" alt="Icono de Hotel Medianoche">
+    <h1>Hotel Medianoche</h1>
+    <p class="sub">Reserva habitaciones, tours y taxi desde tu celular</p>
+    <div class="badges">
+      <span class="badge">Android</span>
+      <span class="badge">Versión 1.0</span>
+      <span class="badge">13 MB</span>
+      <span class="badge">Gratis</span>
+    </div>
+    <a class="btn" href="https://github.com/BrayanUQ-jpg/hotel-medianoche-app/releases/latest/download/HotelMedianoche.apk">
+      ⬇ Descargar APK
+    </a>
+    <p class="small">Requiere Android 7.0 o superior</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section>
+    <h2>Así se ve</h2>
+    <div class="shots">
+      <figure class="shot"><img src="img/inicio.jpg" alt="Pantalla de inicio de la app" loading="lazy"><p>Inicio</p></figure>
+      <figure class="shot"><img src="img/tours.jpg" alt="Pantalla de tours turísticos con buscador" loading="lazy"><p>Tours turísticos</p></figure>
+      <figure class="shot"><img src="img/taxi.jpg" alt="Pantalla para solicitar taxi" loading="lazy"><p>Solicitar taxi</p></figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>¿Qué puedes hacer?</h2>
+    <div class="feats">
+      <div class="feat"><b>Reservar habitaciones</b><span>Elige fechas y reserva con tu pago.</span></div>
+      <div class="feat"><b>Tours turísticos</b><span>Huacas, Chan Chan, Huanchaco y más, con buscador.</span></div>
+      <div class="feat"><b>Pedir taxi</b><span>Servicio estilo Yango o inDrive, con acceso a las apps reales.</span></div>
+      <div class="feat"><b>Varios métodos de pago</b><span>Yape, Plin, tarjeta o efectivo.</span></div>
+      <div class="feat"><b>Historial</b><span>Consulta tus reservas, tours y viajes.</span></div>
+      <div class="feat"><b>Acceso con Google</b><span>Entra con tu cuenta o crea una nueva.</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Cómo instalarla</h2>
+    <ol class="steps">
+      <li>Pulsa <b>Descargar APK</b> desde tu celular Android.</li>
+      <li>Abre el archivo descargado <b>HotelMedianoche.apk</b>.</li>
+      <li>Si Android lo pide, activa <b>«Instalar apps de fuentes desconocidas»</b> para tu navegador o gestor de archivos.</li>
+      <li>Si aparece un aviso de Play Protect, elige <b>Instalar de todos modos</b>.</li>
+      <li>Abre <b>Hotel Medianoche</b> y regístrate.</li>
+    </ol>
+  </section>
+
+  <section>
+    <div class="note">
+      <b>Importante:</b> esta es una app académica y está fuera de la Play Store, por eso Android muestra esos avisos al instalarla.
+      El taxi y los pagos funcionan como simulación; los botones «Abrir Yango / inDrive / Yape / Plin» abren las apps reales si las tienes instaladas.
+      El acceso con Google puede mostrar un aviso de «app no verificada».
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    Hotel Medianoche · Proyecto académico ·
+    <a href="https://github.com/BrayanUQ-jpg/hotel-medianoche-app">Ver código en GitHub</a>
+  </div>
+</footer>
+
+</body>
+</html>
